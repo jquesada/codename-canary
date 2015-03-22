@@ -1,0 +1,103 @@
+body { padding-top: 50px; }
+
+.navbar-inverse { background-color: #003854; }
+.navbar-inverse .navbar-brand { color: #e6eae4; }
+.navbar-inverse .navbar-toggle { float: left; margin-left: 15px; border-color: #e6eae4; }
+.navbar-inverse .navbar-toggle .icon-bar { background-color: #e6eae4; }
+.navbar-inverse .navbar-toggle:hover { background-color: #00495c; }
+
+.page-header { margin-top: 10px; }
+.page-header a { color: #003854; }
+
+#wrap { padding-left: 250px; transition: all 0.4s ease 0s; }
+@media (max-width: 767px) { #wrap { padding-left: 0; } }
+
+#content-wrapper { width: 100%; }
+
+@media (max-width: 767px) { #wrap.active { position: relative; left: 250px; }
+  #wrap.active #sidebar-wrap { left: 250px; width: 250px; transition: all 0.4s ease 0s; } }
+#radio, #social, #about { display: none; }
+
+/*Fancy sidebar help from http://startbootstrap.com/templates/simple-sidebar.html*/
+#sidebar-wrap { margin-left: -250px; left: 250px; background: #2a2a2b; width: 250px; position: fixed; height: 100%; overflow-y: auto; z-index: 1000; transition: all 0.4s ease 0s; }
+@media (max-width: 767px) { #sidebar-wrap { left: 0; } }
+
+#credit { position: absolute; bottom: 80px; }
+#credit a:first-child { margin-left: 25px; }
+#credit img { margin-bottom: 20px; }
+
+.sidebar-nav { position: absolute; top: 0; width: 250px; list-style: none; margin: 0; padding: 0; }
+
+.sidebar-nav li { line-height: 40px; text-indent: 20px; }
+
+.sidebar-nav li span { display: block; color: #e6eae4; }
+
+.sidebar-nav li span:hover { background: #404042; color: #fff; cursor: pointer; }
+
+.sidebar-nav > .sidebar-brand { height: 65px; line-height: 60px; font-size: 18px; color: #e6eae4; }
+
+.sidebar-nav > .sidebar-brand a { color: #999999; }
+
+.sidebar-nav > .sidebar-brand a:hover { color: #fff; background: none; }
+
+.act { background: #404042; color: #fff; }
+
+#radio { margin: 0 auto; width: 100%; }
+
+#controls { font-size: 30px; }
+
+#play, #next, #stop { display: inline; cursor: pointer; }
+
+#pause, #prev { display: none; cursor: pointer; }
+
+#volume { margin-left: 20px; font-size: 30px; display: none; }
+
+#track { margin: 5px 0; }
+
+#dj { margin-bottom: 10px; }
+
+#sc { margin-top: 5px; }
+#sc a { color: #00495c; }
+
+#what { margin-bottom: 10px; margin-top: -10px; }
+
+#desc { margin-bottom: 10px; }
+
+#feed img { display: inline; margin-right: 10px; margin-bottom: 10px; border: #003854 1px solid; }
+
+/*
+CSS Loader. Credit: http://codepen.io/tmyg/pen/bwLom
+==================================================================
+*/
+#spin { width: 50px; height: 50px; background: #aaa; margin: 0 auto; position: relative; display: none; }
+
+#spin:after { position: absolute; content: ""; width: 80%; height: 80%; border-radius: 100%; background: #fff; top: 10%; left: 10%; }
+
+#spin span em { background: #003854; -webkit-animation-duration: 3s; }
+
+/* No need to edit below this line */
+@-webkit-keyframes rotate-rt { 0% { -webkit-transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(180deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  75% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate-lt { 0% { -webkit-transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  75% { -webkit-transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); } }
+
+#spin { border-radius: 100%; position: relative; }
+
+#spin span { width: 50%; height: 100%; overflow: hidden; position: absolute; }
+
+#spin span:first-child { left: 0; }
+
+#spin span:last-child { left: 50%; }
+
+#spin span em { border-radius: 999px; position: absolute; width: 100%; height: 100%; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; }
+
+#spin span:first-child em { left: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; -webkit-animation-name: rotate-lt; -webkit-transform-origin: 0 50%; }
+
+#spin span:last-child em { left: -100%; border-top-right-radius: 0; border-bottom-right-radius: 0; -webkit-animation-name: rotate-rt; -webkit-transform-origin: 100% 50%; }

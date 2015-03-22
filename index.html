@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Codename Canary</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="app/src/css/test.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Codename Canary</a>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <!-- Sidebar -->
+        <div id="sidebar-wrap">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">Personality Music Group</li>
+                <li>
+                    <span class="artist" id="djtrinid">DJ Trini D</span>
+                </li>
+                <li>
+                    <span class="artist" id="BigFalHoe">Fallon</span>
+                </li>
+                <li>
+                    <span class="artist" id="FlyAssMikey">Mikey Rights</span>
+                </li>
+                <li class="sidebar-brand">Slut Gun Music</li>
+                <li>
+                    <span class="artist" id="dream-shore">Dreamshore</span>
+                </li>
+                <li>
+                    <span class="artist" id="x3sr">X3SR</span>
+                </li>
+            </ul>
+            <div id="credit">
+                <a href="https://soundcloud.com/" target="_blank">
+                    <img src="http://developers.soundcloud.com/assets/powered_by_white-7ee4327cfbe5d678897edf6b6c5dd30f.png" alt="Powered by SoundCloud" />
+                </a>
+            </div>
+        </div>
+        <!-- Begin content wrap -->
+        <div id="content-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header" id="user">Choose an artist from the menu</h1>
+                        <img id="login" src="http://connect.soundcloud.com/2/btn-connect-m.png" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="radio">
+
+                            <div id="dj"></div>
+                            <div id="name"></div>
+                            <div id="track"></div>
+                            <div id="song">
+                                <div id="controls">
+                                    <div id="prev">
+                                        <span class="glyphicon glyphicon-backward"></span>
+                                    </div>
+                                    <div id="play">
+                                        <span class="glyphicon glyphicon-play"></span>
+                                    </div>
+                                    <div id="pause">
+                                        <span class="glyphicon glyphicon-pause"></span>
+                                    </div>
+                                    <div id="stop">
+                                        <span class="glyphicon glyphicon-stop"></span>
+                                    </div>
+                                    <div id="next">
+                                        <span class="glyphicon glyphicon-forward"></span>
+                                    </div>
+                                    <div id="volume">
+                                        <div id="mute">
+                                            <span class="glyphicon glyphicon-volume-off"></span>
+                                        </div>
+                                        <div id="down">
+                                            <span class="glyphicon glyphicon-volume-down"></span>
+                                        </div>
+                                        <div id="up">
+                                            <span class="glyphicon glyphicon-volume-up"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sc"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="about">
+                            <div id="what"></div>
+                            <div id="desc"></div>
+                            <div id="from"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
+    <script src="app/src/js/test.js"></script>
+</body>
+
+</html>
